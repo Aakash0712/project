@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/headerCss.css">
+    <title>Your product</title>
+</head>
+<body>
+    <header> <%- include('./header') %> </header>
+    <h1>Yourproduct</h1>
+    <form action="/viewproduct" method="get">
+        <h4>product name</h4>
+        <input type="text" name="productName" value="#">
+        <h4>company name</h4>
+        <input type="text" name="companyName" value="#">
+        <h4>product discription</h4>
+        <input type="text" name="productDescription" value="#">
+        <button type="submit">done</button>
+    </form>
+</body>
+</html>

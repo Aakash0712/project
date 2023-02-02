@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link  rel="stylesheet" type="text/css" href="/css/addpstyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add product</title>
+</head>
+<body>
+    <header> <%- include('./header') %> </header>   
+    <form action="/api/addProduct" method="POST">
+        <h4>product name</h4>
+        <input type="text" name="productName" value="productName">
+        <h4>company name</h4>
+        <input type="text" name="companyName" value="companyName">
+        <h4>product discription</h4>
+        <input type="text" name="productDescription" value="productDescription">
+        <button type="submit">done</button>
+    </form>
+</body>
+</html>
